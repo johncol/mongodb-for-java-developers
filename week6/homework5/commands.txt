@@ -1,0 +1,13 @@
+start mongod --replSet m101 --logpath D:\MongoDB\weeks\week6\homework5\logs\1.log --dbpath D:\MongoDB\weeks\week6\homework5\data\rs1 --port 27017 --smallfiles --oplogSize 64
+start mongod --replSet m101 --logpath D:\MongoDB\weeks\week6\homework5\logs\2.log --dbpath D:\MongoDB\weeks\week6\homework5\data\rs2 --port 27018 --smallfiles --oplogSize 64
+start mongod --replSet m101 --logpath D:\MongoDB\weeks\week6\homework5\logs\3.log --dbpath D:\MongoDB\weeks\week6\homework5\data\rs3 --port 27019 --smallfiles --oplogSize 64
+
+mongo --port 27017
+
+config = { _id: "m101", members:[
+          { _id : 0, host : "localhost:27017"},
+          { _id : 1, host : "localhost:27018"},
+          { _id : 2, host : "localhost:27019"} ]
+};
+rs.initiate(config);
+rs.status();

@@ -1,0 +1,122 @@
+2015-11-22T23:43:30.071-0500 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-11-22T23:43:30.079-0500 I JOURNAL  [initandlisten] journal dir=D:\MongoDB\weeks\week6\homework5\data\rs3\journal
+2015-11-22T23:43:30.079-0500 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-11-22T23:43:30.157-0500 I JOURNAL  [durability] Durability thread started
+2015-11-22T23:43:30.157-0500 I JOURNAL  [journal writer] Journal writer thread started
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4764 port=27019 dbpath=D:\MongoDB\weeks\week6\homework5\data\rs3 64-bit host=john-PC
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] db version v3.0.7
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] git version: 6ce7cbe8c6b899552dadd907604559806aa2e9bd
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-11-22T23:43:30.191-0500 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "D:\MongoDB\weeks\week6\homework5\data\rs3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "D:\MongoDB\weeks\week6\homework5\logs\3.log" } }
+2015-11-22T23:43:30.192-0500 I INDEX    [initandlisten] allocating new ns file D:\MongoDB\weeks\week6\homework5\data\rs3\local.ns, filling with zeroes...
+2015-11-22T23:43:30.467-0500 I STORAGE  [FileAllocator] allocating new datafile D:\MongoDB\weeks\week6\homework5\data\rs3\local.0, filling with zeroes...
+2015-11-22T23:43:30.467-0500 I STORAGE  [FileAllocator] creating directory D:\MongoDB\weeks\week6\homework5\data\rs3\_tmp
+2015-11-22T23:43:30.498-0500 I STORAGE  [FileAllocator] done allocating datafile D:\MongoDB\weeks\week6\homework5\data\rs3\local.0, size: 16MB,  took 0.029 secs
+2015-11-22T23:43:30.503-0500 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-11-22T23:43:30.504-0500 I NETWORK  [initandlisten] waiting for connections on port 27019
+2015-11-22T23:44:23.311-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64856 #1 (1 connection now open)
+2015-11-22T23:44:23.312-0500 I NETWORK  [conn1] end connection 127.0.0.1:64856 (0 connections now open)
+2015-11-22T23:44:23.312-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64858 #2 (1 connection now open)
+2015-11-22T23:44:23.324-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64864 #3 (2 connections now open)
+2015-11-22T23:44:23.325-0500 I NETWORK  [conn3] end connection 127.0.0.1:64864 (1 connection now open)
+2015-11-22T23:44:23.327-0500 I REPL     [WriteReplSetConfig] Starting replication applier threads
+2015-11-22T23:44:23.328-0500 I REPL     [rsSync] replSet warning did not receive a valid config yet, sleeping 5 seconds 
+2015-11-22T23:44:23.328-0500 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-11-22T23:44:23.328-0500 I REPL     [ReplicationExecutor] This node is localhost:27019 in the config
+2015-11-22T23:44:23.328-0500 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-11-22T23:44:23.332-0500 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state STARTUP2
+2015-11-22T23:44:23.333-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64866 #4 (2 connections now open)
+2015-11-22T23:44:23.333-0500 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state STARTUP2
+2015-11-22T23:44:27.693-0500 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state SECONDARY
+2015-11-22T23:44:27.694-0500 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:27017 (0)
+2015-11-22T23:44:28.328-0500 I REPL     [rsSync] ******
+2015-11-22T23:44:28.328-0500 I REPL     [rsSync] creating replication oplog of size: 64MB...
+2015-11-22T23:44:28.328-0500 I STORAGE  [FileAllocator] allocating new datafile D:\MongoDB\weeks\week6\homework5\data\rs3\local.1, filling with zeroes...
+2015-11-22T23:44:28.552-0500 I STORAGE  [FileAllocator] done allocating datafile D:\MongoDB\weeks\week6\homework5\data\rs3\local.1, size: 128MB,  took 0.223 secs
+2015-11-22T23:44:29.333-0500 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state SECONDARY
+2015-11-22T23:44:30.606-0500 I REPL     [ReplicationExecutor] Member localhost:27017 is now in state PRIMARY
+2015-11-22T23:44:30.845-0500 I REPL     [rsSync] ******
+2015-11-22T23:44:30.845-0500 I REPL     [rsSync] initial sync pending
+2015-11-22T23:44:30.846-0500 I REPL     [ReplicationExecutor] syncing from: localhost:27018
+2015-11-22T23:44:30.849-0500 I REPL     [rsSync] initial sync drop all databases
+2015-11-22T23:44:30.849-0500 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2015-11-22T23:44:30.849-0500 I REPL     [rsSync] initial sync clone all databases
+2015-11-22T23:44:30.850-0500 I REPL     [rsSync] initial sync data copy, starting syncup
+2015-11-22T23:44:30.850-0500 I REPL     [rsSync] oplog sync 1 of 3
+2015-11-22T23:44:30.850-0500 I REPL     [rsSync] oplog sync 2 of 3
+2015-11-22T23:44:30.850-0500 I REPL     [rsSync] initial sync building indexes
+2015-11-22T23:44:30.850-0500 I REPL     [rsSync] oplog sync 3 of 3
+2015-11-22T23:44:30.851-0500 I REPL     [rsSync] initial sync finishing up
+2015-11-22T23:44:30.851-0500 I REPL     [rsSync] replSet set minValid=565299ab:1
+2015-11-22T23:44:30.852-0500 I REPL     [rsSync] initial sync done
+2015-11-22T23:44:30.854-0500 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-11-22T23:44:30.855-0500 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-11-22T23:44:31.332-0500 I REPL     [ReplicationExecutor] could not find member to sync from
+2015-11-22T23:44:53.333-0500 I NETWORK  [conn4] end connection 127.0.0.1:64866 (1 connection now open)
+2015-11-22T23:44:53.333-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64870 #5 (2 connections now open)
+2015-11-22T23:44:54.608-0500 I NETWORK  [conn2] end connection 127.0.0.1:64858 (1 connection now open)
+2015-11-22T23:44:54.608-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64872 #6 (2 connections now open)
+2015-11-22T23:45:23.334-0500 I NETWORK  [conn5] end connection 127.0.0.1:64870 (1 connection now open)
+2015-11-22T23:45:23.334-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64876 #7 (2 connections now open)
+2015-11-22T23:45:24.609-0500 I NETWORK  [conn6] end connection 127.0.0.1:64872 (1 connection now open)
+2015-11-22T23:45:24.609-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64880 #8 (2 connections now open)
+2015-11-22T23:45:41.970-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64886 #9 (3 connections now open)
+2015-11-22T23:45:41.984-0500 I NETWORK  [conn9] end connection 127.0.0.1:64886 (2 connections now open)
+2015-11-22T23:45:47.763-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64890 #10 (3 connections now open)
+2015-11-22T23:45:47.775-0500 I NETWORK  [conn10] end connection 127.0.0.1:64890 (2 connections now open)
+2015-11-22T23:45:53.336-0500 I NETWORK  [conn7] end connection 127.0.0.1:64876 (1 connection now open)
+2015-11-22T23:45:53.336-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64893 #11 (2 connections now open)
+2015-11-22T23:45:54.610-0500 I NETWORK  [conn8] end connection 127.0.0.1:64880 (1 connection now open)
+2015-11-22T23:45:54.610-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64895 #12 (2 connections now open)
+2015-11-22T23:46:23.342-0500 I NETWORK  [conn11] end connection 127.0.0.1:64893 (1 connection now open)
+2015-11-22T23:46:23.342-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64913 #13 (2 connections now open)
+2015-11-22T23:46:24.613-0500 I NETWORK  [conn12] end connection 127.0.0.1:64895 (1 connection now open)
+2015-11-22T23:46:24.613-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64918 #14 (2 connections now open)
+2015-11-22T23:46:53.344-0500 I NETWORK  [conn13] end connection 127.0.0.1:64913 (1 connection now open)
+2015-11-22T23:46:53.344-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64929 #15 (2 connections now open)
+2015-11-22T23:46:54.637-0500 I NETWORK  [conn14] end connection 127.0.0.1:64918 (1 connection now open)
+2015-11-22T23:46:54.637-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64933 #16 (2 connections now open)
+2015-11-22T23:47:23.345-0500 I NETWORK  [conn15] end connection 127.0.0.1:64929 (1 connection now open)
+2015-11-22T23:47:23.345-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64938 #17 (2 connections now open)
+2015-11-22T23:47:24.639-0500 I NETWORK  [conn16] end connection 127.0.0.1:64933 (1 connection now open)
+2015-11-22T23:47:24.640-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64943 #18 (2 connections now open)
+2015-11-22T23:47:51.178-0500 I NETWORK  [conn18] end connection 127.0.0.1:64943 (1 connection now open)
+2015-11-22T23:47:52.644-0500 I NETWORK  [ReplExecNetThread-1] Socket recv() errno:10053 Se ha anulado una conexión establecida por el software en su equipo host.. 127.0.0.1:27017
+2015-11-22T23:47:52.644-0500 I NETWORK  [ReplExecNetThread-1] SocketException: remote: 127.0.0.1:27017 error: 9001 socket exception [RECV_ERROR] server [127.0.0.1:27017] 
+2015-11-22T23:47:52.644-0500 I NETWORK  [ReplExecNetThread-1] DBClientCursor::init call() failed
+2015-11-22T23:47:52.645-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location10276 DBClientBase::findN: transport error: localhost:27017 ns: admin.$cmd query: { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27019", fromId: 2, checkEmpty: false }
+2015-11-22T23:47:53.646-0500 I NETWORK  [ReplExecNetThread-2] Socket recv() errno:10054 Se ha forzado la interrupción de una conexión existente por el host remoto. 127.0.0.1:27018
+2015-11-22T23:47:53.646-0500 I NETWORK  [ReplExecNetThread-2] SocketException: remote: 127.0.0.1:27018 error: 9001 socket exception [RECV_ERROR] server [127.0.0.1:27018] 
+2015-11-22T23:47:53.646-0500 I NETWORK  [ReplExecNetThread-2] DBClientCursor::init call() failed
+2015-11-22T23:47:53.647-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; Location10276 DBClientBase::findN: transport error: localhost:27018 ns: admin.$cmd query: { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27019", fromId: 2, checkEmpty: false }
+2015-11-22T23:47:53.647-0500 I NETWORK  [conn17] end connection 127.0.0.1:64938 (0 connections now open)
+2015-11-22T23:47:53.664-0500 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27017, reason: errno:10061 No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2015-11-22T23:47:53.664-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-11-22T23:47:54.647-0500 W NETWORK  [ReplExecNetThread-2] Failed to connect to 127.0.0.1:27018, reason: errno:10061 No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2015-11-22T23:47:54.647-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27018; Location18915 Failed attempt to connect to localhost:27018; couldn't connect to server localhost:27018 (127.0.0.1), connection attempt failed
+2015-11-22T23:47:54.674-0500 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27017, reason: errno:10061 No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2015-11-22T23:47:54.674-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27017; Location18915 Failed attempt to connect to localhost:27017; couldn't connect to server localhost:27017 (127.0.0.1), connection attempt failed
+2015-11-22T23:47:54.674-0500 I REPL     [ReplicationExecutor] Standing for election
+2015-11-22T23:47:55.362-0500 I CONTROL  CTRL_CLOSE_EVENT signal
+2015-11-22T23:47:55.362-0500 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-11-22T23:47:55.648-0500 W NETWORK  [ReplExecNetThread-2] Failed to connect to 127.0.0.1:27018, reason: errno:10061 No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2015-11-22T23:47:55.674-0500 W NETWORK  [ReplExecNetThread-1] Failed to connect to 127.0.0.1:27018, reason: errno:10061 No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2015-11-22T23:47:55.674-0500 I REPL     [consoleTerminate] Stopping replication applier threads
+2015-11-22T23:47:56.361-0500 I CONTROL  [consoleTerminate] now exiting
+2015-11-22T23:47:56.361-0500 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2015-11-22T23:47:56.361-0500 I NETWORK  [consoleTerminate] closing listening socket: 348
+2015-11-22T23:47:56.361-0500 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2015-11-22T23:47:56.361-0500 I NETWORK  [consoleTerminate] shutdown: going to close sockets...
+2015-11-22T23:47:56.361-0500 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-11-22T23:47:56.361-0500 I STORAGE  [consoleTerminate] shutdown: final commit...
+2015-11-22T23:47:56.367-0500 I JOURNAL  [consoleTerminate] journalCleanup...
+2015-11-22T23:47:56.385-0500 I JOURNAL  [consoleTerminate] removeJournalFiles
+2015-11-22T23:47:56.386-0500 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2015-11-22T23:47:56.463-0500 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-11-22T23:47:56.463-0500 I JOURNAL  [durability] Durability thread stopped
+2015-11-22T23:47:56.463-0500 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2015-11-22T23:47:56.465-0500 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2015-11-22T23:47:56.465-0500 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2015-11-22T23:47:56.465-0500 I CONTROL  [consoleTerminate] dbexit:  rc: 12

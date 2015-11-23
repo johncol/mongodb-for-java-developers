@@ -1,0 +1,110 @@
+2015-11-22T23:43:12.881-0500 I CONTROL  Hotfix KB2731284 or later update is not installed, will zero-out data files
+2015-11-22T23:43:12.888-0500 I JOURNAL  [initandlisten] journal dir=D:\MongoDB\weeks\week6\homework5\data\rs1\journal
+2015-11-22T23:43:12.889-0500 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-11-22T23:43:12.936-0500 I JOURNAL  [durability] Durability thread started
+2015-11-22T23:43:12.937-0500 I JOURNAL  [journal writer] Journal writer thread started
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] MongoDB starting : pid=5256 port=27017 dbpath=D:\MongoDB\weeks\week6\homework5\data\rs1 64-bit host=john-PC
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] db version v3.0.7
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] git version: 6ce7cbe8c6b899552dadd907604559806aa2e9bd
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] build info: windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-11-22T23:43:12.967-0500 I CONTROL  [initandlisten] options: { net: { port: 27017 }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "D:\MongoDB\weeks\week6\homework5\data\rs1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "D:\MongoDB\weeks\week6\homework5\logs\1.log" } }
+2015-11-22T23:43:12.971-0500 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-11-22T23:43:12.972-0500 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-11-22T23:43:51.281-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64854 #1 (1 connection now open)
+2015-11-22T23:44:23.307-0500 I REPL     [conn1] replSetInitiate admin command received from client
+2015-11-22T23:44:23.312-0500 I REPL     [conn1] replSet replSetInitiate config object with 3 members parses ok
+2015-11-22T23:44:23.313-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64859 #2 (2 connections now open)
+2015-11-22T23:44:23.314-0500 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "m101", version: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-11-22T23:44:23.314-0500 I REPL     [ReplicationExecutor] This node is localhost:27017 in the config
+2015-11-22T23:44:23.314-0500 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-11-22T23:44:23.314-0500 I REPL     [conn1] ******
+2015-11-22T23:44:23.314-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64860 #3 (3 connections now open)
+2015-11-22T23:44:23.314-0500 I REPL     [conn1] creating replication oplog of size: 64MB...
+2015-11-22T23:44:23.314-0500 I STORAGE  [FileAllocator] allocating new datafile D:\MongoDB\weeks\week6\homework5\data\rs1\local.1, filling with zeroes...
+2015-11-22T23:44:23.314-0500 I STORAGE  [FileAllocator] creating directory D:\MongoDB\weeks\week6\homework5\data\rs1\_tmp
+2015-11-22T23:44:23.314-0500 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state STARTUP
+2015-11-22T23:44:23.315-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state STARTUP
+2015-11-22T23:44:23.316-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64861 #4 (4 connections now open)
+2015-11-22T23:44:23.316-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64862 #5 (5 connections now open)
+2015-11-22T23:44:23.317-0500 I NETWORK  [conn4] end connection 127.0.0.1:64861 (4 connections now open)
+2015-11-22T23:44:23.319-0500 I NETWORK  [conn5] end connection 127.0.0.1:64862 (3 connections now open)
+2015-11-22T23:44:23.574-0500 I STORAGE  [FileAllocator] done allocating datafile D:\MongoDB\weeks\week6\homework5\data\rs1\local.1, size: 128MB,  took 0.259 secs
+2015-11-22T23:44:25.314-0500 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state STARTUP2
+2015-11-22T23:44:25.692-0500 I COMMAND  [conn3] command admin.$cmd command: replSetHeartbeat { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27018", fromId: 1, checkEmpty: false } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:116 locks:{} 364ms
+2015-11-22T23:44:25.692-0500 I COMMAND  [conn2] command admin.$cmd command: replSetHeartbeat { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27019", fromId: 2, checkEmpty: false } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:116 locks:{} 360ms
+2015-11-22T23:44:25.693-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state STARTUP2
+2015-11-22T23:44:27.125-0500 I REPL     [conn1] ******
+2015-11-22T23:44:27.125-0500 I REPL     [conn1] Starting replication applier threads
+2015-11-22T23:44:27.125-0500 I COMMAND  [conn1] command admin.$cmd command: replSetInitiate { replSetInitiate: { _id: "m101", members: [ { _id: 0.0, host: "localhost:27017" }, { _id: 1.0, host: "localhost:27018" }, { _id: 2.0, host: "localhost:27019" } ] } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:37 locks:{ Global: { acquireCount: { r: 5, w: 3, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 121 } }, MMAPV1Journal: { acquireCount: { w: 7 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 52 } }, Database: { acquireCount: { w: 1, W: 2 } }, Metadata: { acquireCount: { W: 3 } }, oplog: { acquireCount: { w: 1 } } } 3818ms
+2015-11-22T23:44:27.125-0500 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-11-22T23:44:27.128-0500 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-11-22T23:44:27.314-0500 I REPL     [ReplicationExecutor] Standing for election
+2015-11-22T23:44:27.315-0500 I REPL     [ReplicationExecutor] not electing self, localhost:27018 would veto with 'I don't think localhost:27017 is electable because the member is not currently a secondary (mask 0x8)'
+2015-11-22T23:44:27.315-0500 I REPL     [ReplicationExecutor] not electing self, we are not freshest
+2015-11-22T23:44:27.693-0500 I REPL     [ReplicationExecutor] Standing for election
+2015-11-22T23:44:27.694-0500 I REPL     [ReplicationExecutor] replSet info electSelf
+2015-11-22T23:44:27.694-0500 I REPL     [ReplicationExecutor] received vote: 1 votes from localhost:27018
+2015-11-22T23:44:27.694-0500 I REPL     [ReplicationExecutor] replSet election succeeded, assuming primary role
+2015-11-22T23:44:27.694-0500 I REPL     [ReplicationExecutor] transition to PRIMARY
+2015-11-22T23:44:28.128-0500 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2015-11-22T23:44:28.192-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64867 #6 (4 connections now open)
+2015-11-22T23:44:28.198-0500 I NETWORK  [conn6] end connection 127.0.0.1:64867 (3 connections now open)
+2015-11-22T23:44:29.330-0500 I REPL     [ReplicationExecutor] Member localhost:27018 is now in state SECONDARY
+2015-11-22T23:44:30.605-0500 I COMMAND  [conn3] command admin.$cmd command: replSetHeartbeat { replSetHeartbeat: "m101", pv: 1, v: 1, from: "localhost:27018", fromId: 1, checkEmpty: false } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:138 locks:{} 912ms
+2015-11-22T23:44:32.606-0500 I REPL     [ReplicationExecutor] Member localhost:27019 is now in state SECONDARY
+2015-11-22T23:44:54.608-0500 I NETWORK  [conn2] end connection 127.0.0.1:64859 (2 connections now open)
+2015-11-22T23:44:54.608-0500 I NETWORK  [conn3] end connection 127.0.0.1:64860 (1 connection now open)
+2015-11-22T23:44:54.609-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64873 #7 (2 connections now open)
+2015-11-22T23:44:54.609-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64874 #8 (3 connections now open)
+2015-11-22T23:45:24.609-0500 I NETWORK  [conn8] end connection 127.0.0.1:64874 (2 connections now open)
+2015-11-22T23:45:24.609-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64881 #9 (3 connections now open)
+2015-11-22T23:45:24.610-0500 I NETWORK  [conn7] end connection 127.0.0.1:64873 (2 connections now open)
+2015-11-22T23:45:24.610-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64882 #10 (3 connections now open)
+2015-11-22T23:45:41.934-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64884 #11 (4 connections now open)
+2015-11-22T23:45:41.937-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64885 #12 (5 connections now open)
+2015-11-22T23:45:41.984-0500 I NETWORK  [conn11] end connection 127.0.0.1:64884 (4 connections now open)
+2015-11-22T23:45:41.984-0500 I NETWORK  [conn12] end connection 127.0.0.1:64885 (4 connections now open)
+2015-11-22T23:45:47.746-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64888 #13 (4 connections now open)
+2015-11-22T23:45:47.749-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64889 #14 (5 connections now open)
+2015-11-22T23:45:47.775-0500 I NETWORK  [conn14] end connection 127.0.0.1:64889 (4 connections now open)
+2015-11-22T23:45:47.775-0500 I NETWORK  [conn13] end connection 127.0.0.1:64888 (4 connections now open)
+2015-11-22T23:45:54.610-0500 I NETWORK  [conn9] end connection 127.0.0.1:64881 (2 connections now open)
+2015-11-22T23:45:54.611-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64896 #15 (3 connections now open)
+2015-11-22T23:45:54.611-0500 I NETWORK  [conn10] end connection 127.0.0.1:64882 (2 connections now open)
+2015-11-22T23:45:54.612-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64897 #16 (3 connections now open)
+2015-11-22T23:46:24.612-0500 I NETWORK  [conn15] end connection 127.0.0.1:64896 (2 connections now open)
+2015-11-22T23:46:24.612-0500 I NETWORK  [conn16] end connection 127.0.0.1:64897 (1 connection now open)
+2015-11-22T23:46:24.612-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64916 #17 (2 connections now open)
+2015-11-22T23:46:24.613-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64917 #18 (3 connections now open)
+2015-11-22T23:46:54.636-0500 I NETWORK  [conn17] end connection 127.0.0.1:64916 (2 connections now open)
+2015-11-22T23:46:54.636-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64932 #19 (3 connections now open)
+2015-11-22T23:46:54.637-0500 I NETWORK  [conn18] end connection 127.0.0.1:64917 (2 connections now open)
+2015-11-22T23:46:54.637-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64934 #20 (3 connections now open)
+2015-11-22T23:47:24.638-0500 I NETWORK  [conn19] end connection 127.0.0.1:64932 (2 connections now open)
+2015-11-22T23:47:24.639-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64941 #21 (3 connections now open)
+2015-11-22T23:47:24.639-0500 I NETWORK  [conn20] end connection 127.0.0.1:64934 (2 connections now open)
+2015-11-22T23:47:24.640-0500 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64942 #22 (3 connections now open)
+2015-11-22T23:47:46.499-0500 I NETWORK  [conn1] end connection 127.0.0.1:64854 (2 connections now open)
+2015-11-22T23:47:50.675-0500 I CONTROL  CTRL_CLOSE_EVENT signal
+2015-11-22T23:47:50.675-0500 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2015-11-22T23:47:50.676-0500 I REPL     [consoleTerminate] Stopping replication applier threads
+2015-11-22T23:47:51.177-0500 I CONTROL  [consoleTerminate] now exiting
+2015-11-22T23:47:51.177-0500 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2015-11-22T23:47:51.177-0500 I NETWORK  [consoleTerminate] closing listening socket: 352
+2015-11-22T23:47:51.177-0500 I NETWORK  [consoleTerminate] shutdown: going to flush diaglog...
+2015-11-22T23:47:51.177-0500 I NETWORK  [consoleTerminate] shutdown: going to close sockets...
+2015-11-22T23:47:51.177-0500 I STORAGE  [consoleTerminate] shutdown: waiting for fs preallocator...
+2015-11-22T23:47:51.177-0500 I STORAGE  [consoleTerminate] shutdown: final commit...
+2015-11-22T23:47:51.178-0500 I NETWORK  [conn21] end connection 127.0.0.1:64941 (1 connection now open)
+2015-11-22T23:47:51.178-0500 I NETWORK  [conn22] end connection 127.0.0.1:64942 (1 connection now open)
+2015-11-22T23:47:51.210-0500 I JOURNAL  [consoleTerminate] journalCleanup...
+2015-11-22T23:47:51.222-0500 I JOURNAL  [consoleTerminate] removeJournalFiles
+2015-11-22T23:47:51.223-0500 I JOURNAL  [consoleTerminate] Terminating durability thread ...
+2015-11-22T23:47:51.280-0500 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-11-22T23:47:51.280-0500 I JOURNAL  [durability] Durability thread stopped
+2015-11-22T23:47:51.280-0500 I STORAGE  [consoleTerminate] shutdown: closing all files...
+2015-11-22T23:47:51.281-0500 I STORAGE  [consoleTerminate] closeAllFiles() finished
+2015-11-22T23:47:51.281-0500 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2015-11-22T23:47:51.281-0500 I CONTROL  [consoleTerminate] dbexit:  rc: 12
